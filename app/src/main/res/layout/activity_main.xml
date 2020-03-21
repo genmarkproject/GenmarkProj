@@ -24,7 +24,7 @@
         tools:layout_editor_absoluteY="492dp" />
 
     <EditText
-        android:id="@+id/email_textbox"
+        android:id="@+id/emailTextBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -34,7 +34,7 @@
         tools:layout_editor_absoluteY="280dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passwordBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
