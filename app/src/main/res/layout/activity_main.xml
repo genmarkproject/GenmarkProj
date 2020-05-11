@@ -10,29 +10,42 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="326dp"
-        android:layout_height="121dp"
-        app:srcCompat="@drawable/o"
-        tools:layout_editor_absoluteX="137dp"
-        tools:layout_editor_absoluteY="73dp" />
+        android:layout_height="0dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="113dp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/o" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="453dp"
-        android:layout_height="144dp"
+	android:id="@+id/button2"
+	android:onClick="changeToMaps"
+       	android:layout_width="453dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
         android:text="SHOW NEAREST SERVICE STATION"
         android:textColor="#3F51B5"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="527dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="453dp"
-        android:layout_height="144dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="76dp"
         android:text="SELECT GENSET"
         android:textColor="#3F51B5"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="307dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
