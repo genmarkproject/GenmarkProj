@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#51B1FF"
+    tools:context=".RemedyActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:src="@drawable/o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="logo"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <ImageButton
+        android:id="@+id/modelImageButton"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/green_round_button"
+        app:layout_constraintEnd_toStartOf="@+id/SerialNumberImageButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="@id/barrier1"
+        app:layout_constraintTop_toTopOf="@id/barrier1" />
+
+    <TextView
+        android:id="@+id/modelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MODEL"
+        android:textColor="#FFFFFF"
+        android:textSize="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/modelImageButton"
+        app:layout_constraintStart_toStartOf="@+id/modelImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/modelImageButton" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#26FF43"
+        app:layout_constraintBottom_toBottomOf="@+id/modelImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/SerialNumberImageButton"
+        app:layout_constraintStart_toEndOf="@+id/modelImageButton"
+        app:layout_constraintTop_toTopOf="@+id/modelImageButton" />
+
+    <ImageButton
+        android:id="@+id/SerialNumberImageButton"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:background="@drawable/green_round_button"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toStartOf="@+id/SymptomImageButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/modelImageButton"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+
+    <TextView
+        android:id="@+id/SerialNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SERIAL NUMBER"
+        android:textColor="#FFFFFF"
+        android:textSize="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/SerialNumberImageButton"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="@+id/SerialNumberImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/SerialNumberImageButton" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#26FF43"
+        app:layout_constraintBottom_toBottomOf="@+id/SerialNumberImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/SymptomImageButton"
+        app:layout_constraintStart_toEndOf="@+id/SerialNumberImageButton"
+        app:layout_constraintTop_toTopOf="@+id/SerialNumberImageButton" />
+
+    <ImageButton
+        android:id="@+id/SymptomImageButton"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:background="@drawable/green_round_button"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintEnd_toStartOf="@+id/ProbableCauseImageButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/SerialNumberImageButton"
+        app:layout_constraintTop_toTopOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/SymptomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SYMPTOM"
+        android:textColor="#FFFFFF"
+        android:textSize="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/SymptomImageButton"
+        app:layout_constraintStart_toStartOf="@+id/SymptomImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/SymptomImageButton" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#26FF43"
+        app:layout_constraintBottom_toBottomOf="@+id/SymptomImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/ProbableCauseImageButton"
+        app:layout_constraintStart_toEndOf="@+id/SymptomImageButton"
+        app:layout_constraintTop_toTopOf="@+id/SymptomImageButton" />
+
+    <ImageButton
+        android:id="@+id/ProbableCauseImageButton"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:background="@drawable/green_round_button"
+        app:layout_constraintBottom_toBottomOf="@+id/view4"
+        app:layout_constraintEnd_toStartOf="@+id/RemedyImageButton"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/SymptomImageButton"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
+
+    <TextView
+        android:id="@+id/ProbableCauseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROBABLE CAUSE"
+        android:textColor="#FFFFFF"
+        android:textSize="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/ProbableCauseImageButton"
+        app:layout_constraintStart_toStartOf="@+id/ProbableCauseImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/ProbableCauseImageButton" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#26FF43"
+        app:layout_constraintBottom_toBottomOf="@+id/ProbableCauseImageButton"
+        app:layout_constraintEnd_toStartOf="@+id/RemedyImageButton"
+        app:layout_constraintStart_toEndOf="@+id/ProbableCauseImageButton"
+        app:layout_constraintTop_toTopOf="@+id/ProbableCauseImageButton" />
+
+    <ImageButton
+        android:id="@+id/RemedyImageButton"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/white_round_button"
+        app:layout_constraintBottom_toBottomOf="@+id/view5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toEndOf="@+id/ProbableCauseImageButton"
+        app:layout_constraintTop_toTopOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/RemedyCauseTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REMEDY"
+        android:textColor="#FFFFFF"
+        android:textSize="7dp"
+        app:layout_constraintEnd_toEndOf="@+id/RemedyImageButton"
+        app:layout_constraintStart_toStartOf="@+id/RemedyImageButton"
+        app:layout_constraintTop_toBottomOf="@+id/RemedyImageButton" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="RemedyCauseTextView"
+        tools:layout_editor_absoluteY="49dp" />
+
+    <View
+        android:id="@+id/block"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_rectangle"
+        app:layout_constraintBottom_toBottomOf="@+id/notification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier2" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/barrier2"
+        app:srcCompat="@drawable/ic_battery"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/probableCause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Starter motor solenoid defective"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/icon"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toTopOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/remedyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Remedy:"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintTop_toBottomOf="@+id/probableCause" />
+
+    <TextView
+        android:id="@+id/remedyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Engine Manual"
+        app:layout_constraintBottom_toBottomOf="@+id/remedyLabel"
+        app:layout_constraintStart_toEndOf="@+id/remedyLabel"
+        app:layout_constraintTop_toTopOf="@+id/remedyLabel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#919191"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remedyLabel" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:paddingBottom="30dp"
+        android:text="You need to contact a service station"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:onClick="findStation"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_round_button"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:text="Find service station"
+        app:layout_constraintBottom_toBottomOf="@+id/block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/block"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_rectangle"
+
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="10dp"
+        android:text="Do you have any questions or is something unclear? Then chat with one of our employees!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chat with us"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:background="@drawable/blue_round_button" />
+</androidx.constraintlayout.widget.ConstraintLayout>
