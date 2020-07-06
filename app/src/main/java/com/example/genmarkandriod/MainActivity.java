@@ -1,9 +1,12 @@
 package com.example.genmarkandriod;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import java.util.LinkedHashMap;
